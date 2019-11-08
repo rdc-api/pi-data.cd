@@ -10,7 +10,10 @@ const ProvinceSchema = new Schema({
   langue: {
     type: String,
   },
-  superficie: {
+  superficie: { // en km2
+    type: Number,
+  },
+  population: {
     type: Number,
   }
 });
