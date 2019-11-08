@@ -1,0 +1,1 @@
+{"message":"Failed! failed to connect to server [localhost:27017] on first connect [MongoNetworkError: getaddrinfo ENOTFOUND localhost localhost:27017]","level":"error"}
