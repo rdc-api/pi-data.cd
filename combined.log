@@ -69,3 +69,7 @@
 {"message":"Seeding ended!","level":"info"}
 {"message":"Seeding started!","level":"info"}
 {"message":"Seeding ended!","level":"info"}
+{"message":"Listening on port: 5000","level":"info"}
+{"name":"MongoTimeoutError","reason":{"name":"MongoNetworkError","errorLabels":["TransientTransactionError"]},"level":"info","message":"Could not connect to MongodbServer selection timed out after 30000 ms","stack":"MongoTimeoutError: Server selection timed out after 30000 ms\n    at Timeout.setTimeout (/Users/karlmusingo/Applications/drc-provinces-api/node_modules/mongodb/lib/core/sdam/topology.js:878:9)\n    at ontimeout (timers.js:436:11)\n    at tryOnTimeout (timers.js:300:5)\n    at listOnTimeout (timers.js:263:5)\n    at Timer.processTimers (timers.js:223:10)"}
+{"message":"Seeding started!","level":"info"}
+{"message":"Seeding ended!","level":"info"}
