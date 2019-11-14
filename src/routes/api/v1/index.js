@@ -1,8 +1,8 @@
 import express from 'express';
-import posts from './posts';
+import provinces from './provinces';
 
 const router = express.Router();
 
-router.use('/posts', posts);
+router.use('/provinces', provinces);
 
 export default router;

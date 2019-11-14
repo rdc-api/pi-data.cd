@@ -1,7 +1,11 @@
 
 // population de l'annee 2015
 export default [
-    {nom: "Kinshasa", population: 9463749, province: "Kinshasa"},
+    {
+        nom: "Kinshasa",
+        population: 9463749,
+        province: "Kinshasa",
+    },
     {nom: "Lubumbashi", population: 1786397, province: "Haut-Katanga"},
     {nom: "Mbuji-Mayi", population: 1680991, province: "Kasaï-Oriental"},
     {nom: "Kananga", population: 1061181, province: "Kasaï-Central"},
@@ -42,3 +46,37 @@ export default [
     {nom: "Kutu", population: 58000, province: "Mai-Ndombe"},
     {nom: "Nioki", population: null, province: null},
 ];
+
+/*
+entreprise:  // Augustin
+{
+    type: prive/public,
+    nom: '',
+    ville
+}
+
+sites touristique: { // Augustin
+    ville:
+    nom: 
+}
+
+hopitaux{ // Bosco
+    type: bublic/prive
+    nom: '',
+    ville: '',
+}
+
+universite: { // Bosco
+    type: bublic/prive
+    ville
+    nom
+    annee de creation
+}
+
+ecole: { // Karl
+    type: public/prive
+    nom
+    ville
+}
+
+*/

@@ -13,7 +13,14 @@
 // les nouvelles provinces avec leurs provinces de provenance 
 
 export default [
-  {nom: "Equateur (anc. Equateur)", chefLieu : "Mbandaka", langue  : "Lingala", population: 1138000, superficie : 103902},
+  {
+    nom: "Equateur (anc. Equateur)",
+    chefLieu : "Mbandaka", 
+    langue  : "Lingala",
+    population: 1138000,
+    superficie : 103902,
+  },
+
   {nom: 'Sud-Ubangui (anc. Equateur)', chefLieu : 'Gemena', langue  : 'Lingala', population: 1528000, superficie : 51648,},
   {nom: 'Nord-Ubangui (anc. Equateur)', chefLieu : 'Gbadolite', langue  : 'Lingala', population: 4617000, superficie : 56644},
   {nom: 'Mongala (anc. Equateur)', chefLieu : 'Lisala', langue  : 'Lingala', population: 2957000, superficie : 58141},
