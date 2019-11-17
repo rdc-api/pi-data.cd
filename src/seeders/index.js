@@ -1,7 +1,9 @@
 import 'dotenv/config';
 import { logger } from '../helpers';
-import { connectDb, Province } from '../models';
+import { connectDb, Province ,Entreprise } from '../models';
 import provinces from './provinces';
+import entreprise from './entreprise';
+
 
 const exitProcess = (code = 0) => {
   logger.info('Seeding ended!');
@@ -15,6 +17,12 @@ connectDb()
       if (err) {
         exitProcess(1);
       };
+      exitProcess();
+    });
+    Entreprise.insertMany(entreprise,(err, entreprise)=>{
+      if(err){
+        exitProcess(1);
+      }
       exitProcess();
     });
   })

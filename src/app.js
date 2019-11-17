@@ -1,4 +1,4 @@
-import express from 'express';
+import express,{Request,Response}  from 'express';
 import morgan from 'morgan';
 import cors from 'cors';
 import http from 'http';
@@ -6,6 +6,7 @@ import 'dotenv/config';
 import swaggerUI from 'swagger-ui-express';
 import YAML from 'yamljs';
 import passport from 'passport';
+import badyParser from 'body-parser';
 import webPush from 'web-push';
 import joiErrors from './middlewares/joiErrors';
 import logger from './helpers/logger';
@@ -31,7 +32,7 @@ app.use(morgan(isProd ? 'combined' : 'dev'));
 app.use(routes);
 app.use(joiErrors());
 app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerYAMLDocs));
-
+app.use(badyParser.json());
 if (isProd) {
   app.use((req, res) => {
     const status = 404;
