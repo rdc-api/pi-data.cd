@@ -1,8 +1,9 @@
 import 'dotenv/config';
 import { logger } from '../helpers';
-import { connectDb, Province ,Entreprise } from '../models';
+import { connectDb, Province ,Entreprise,Touristic } from '../models';
 import provinces from './provinces';
 import entreprise from './entreprise';
+import touristic from './touristic';
 
 
 const exitProcess = (code = 0) => {
@@ -20,6 +21,12 @@ connectDb()
       exitProcess();
     });
     Entreprise.insertMany(entreprise,(err, entreprise)=>{
+      if(err){
+        exitProcess(1);
+      }
+      exitProcess();
+    });
+    Touristic.insertMany(touristic,(err, touristic)=>{
       if(err){
         exitProcess(1);
       }

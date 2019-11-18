@@ -1,1 +1,3 @@
 {"message":"Failed! failed to connect to server [localhost:27017] on first connect [MongoNetworkError: getaddrinfo ENOTFOUND localhost localhost:27017]","level":"error"}
+{"message":"Failed! Cannot read property 'insertMany' of undefined","level":"error"}
+{"message":"Failed! Touristic is not defined","level":"error"}
